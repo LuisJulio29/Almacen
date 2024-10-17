@@ -1,6 +1,6 @@
 <?php
 // vista_grafica_productos.php
-require_once('controlador_productos.php');
+require_once('../Controller/controlador_productos.php');
 
 // Obtener conteo por unidad
 $conteo_unidad = obtenerConteoPorUnidad();

@@ -2,7 +2,7 @@
 // controlador_productos.php
 
 // URL de la API de productos
-$api_url = "http://localhost/Almacen/get_productos.php";
+$api_url = "http://localhost/Almacen/Model/get_productos.php";
 
 // Función para obtener los productos de la API
 function obtenerProductos() {

@@ -68,7 +68,7 @@
         <h1>Lista de Productos</h1>
         <?php
         // URL de la API de productos
-        $api_url = "http://localhost/Almacen/get_productos.php";
+        $api_url = "http://localhost/Almacen/Model/get_productos.php";
 
         // Usar file_get_contents para hacer la solicitud a la API
         $response = file_get_contents($api_url);
