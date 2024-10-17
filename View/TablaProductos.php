@@ -1,6 +1,7 @@
 <?php
 // vista_tabla_productos.php
 require_once('../Controller/controlador_productos.php');
+
 $productos = obtenerProductos();
 ?>
 
