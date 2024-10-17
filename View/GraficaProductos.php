@@ -13,6 +13,7 @@ $conteo_unidad = obtenerConteoPorUnidad();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráfica de Productos por Unidad</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,31 +26,6 @@ $conteo_unidad = obtenerConteoPorUnidad();
             align-items: center;
             height: 100vh;
             flex-direction: column;
-        }
-
-        canvas {
-            max-width: 1000px;
-            width: 80%;
-            margin: 20px auto;
-        }
-        .button-container {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .button-container a {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .button-container a:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
