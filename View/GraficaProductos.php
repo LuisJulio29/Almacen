@@ -32,9 +32,33 @@ $conteo_unidad = obtenerConteoPorUnidad();
             width: 80%;
             margin: 20px auto;
         }
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .button-container a {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
+
+<div class="button-container">
+    <a href="http://localhost/Almacen/View/TablaProveedores.php">Proveedores</a>
+    <a href="http://localhost/Almacen/View/TablaProductos.php">Productos</a>
+</div>
 
 <h1>Gráfica de Productos por Unidad</h1>
 

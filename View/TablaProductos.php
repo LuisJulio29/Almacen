@@ -27,8 +27,29 @@ $productos = obtenerProductos();
 
         h1 {
             color: #007BFF;
+            text-align: center;
+            position: relative;
         }
 
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .button-container a {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
         table {
             border-collapse: collapse;
             width: 80%;
@@ -76,6 +97,11 @@ $productos = obtenerProductos();
     </style>
 </head>
 <body>
+
+<div class="button-container">
+    <a href="http://localhost/Almacen/View/TablaProveedores.php">Proveedores</a>
+    <a href="http://localhost/Almacen/View/GraficaProductos.php">Gráfica de Productos</a>
+</div>
 
 <h1>Lista de Productos</h1>
 

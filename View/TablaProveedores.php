@@ -1,7 +1,6 @@
 <?php
 // vista_tabla_productos.php
 require_once('../Controller/controlador_proveedor.php');
-
 $proveedores = obtenerProveedor();
 ?>
 
@@ -27,6 +26,28 @@ $proveedores = obtenerProveedor();
 
         h1 {
             color: #007BFF;
+            text-align: center;
+            position: relative;
+        }
+
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .button-container a {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
         }
 
         table {
@@ -77,7 +98,13 @@ $proveedores = obtenerProveedor();
 </head>
 <body>
 
-<h1>Lista de Productos</h1>
+<!-- Contenedor para los botones a ambos lados del título -->
+<div class="button-container">
+    <a href="http://localhost/Almacen/View/TablaProductos.php">Productos</a>
+    <a href="http://localhost/Almacen/View/GraficaProductos.php">Gráfica de Productos</a>
+</div>
+
+<h1>Lista de Proveedores</h1>
 
 <?php
 if (isset($proveedores['mensaje'])) {
